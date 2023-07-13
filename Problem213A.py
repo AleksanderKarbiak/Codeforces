@@ -5,10 +5,12 @@
 #Output
 #Print a single integer — the number of problems the friends will implement on the contest. #
 
-number_of_problems = input()
-how_much_they_know = list(input())
-print(how_much_they_know)
-
-x= int(how_much_they_know[0])+(int(how_much_they_know[2]))+(int(how_much_they_know[4]))
-print(x)
-
+l=[]
+for i in range(0, int(input())):
+    j = input().split()
+    m=0
+    
+    if j.count('1') >= 2:
+        m+=1
+        l.append(m)
+print(sum(l))
